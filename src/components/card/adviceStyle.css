@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Be+Vietnam+Pro&family=Bruno+Ace+SC&family=Caprasimo&family=Epilogue&family=Inter&family=Manrope&family=Montserrat+Alternates:wght@200&family=Oooh+Baby&family=Playfair+Display&family=Public+Sans&family=Roboto&family=Rubik&display=swap');
+
+.advice-card-cnt {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 400px;
+  height: 250px;
+  border-radius: 13px;
+  background-color: hsl(218, 23%, 16%);
+  gap: 25px;
+}
+
+.advice-header {
+  font-family: 'Manrope', sans-serif;
+  color: hsl(193, 38%, 86%);
+  font-weight: 600;
+  font-size: 13px;
+}
+
+.advice-para {
+  font-family: 'Manrope', sans-serif;
+  color: hsl(193, 38%, 86%);
+  font-size: 20px;
+  font-weight: 700;
+}
