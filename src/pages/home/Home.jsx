@@ -1,7 +1,12 @@
 import React from 'react';
+import AdviceCard from '../../components/card/AdviceCard';
 
 const Home = () => {
-  return <div>Home</div>;
+  return (
+    <div>
+      <AdviceCard />
+    </div>
+  );
 };
 
 export default Home;
