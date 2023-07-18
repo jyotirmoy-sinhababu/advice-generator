@@ -3,6 +3,8 @@ import React, { useState, useEffect } from 'react';
 
 import './adviceStyle.css';
 
+import { BsFillDice5Fill } from 'react-icons/bs';
+
 const AdviceCard = () => {
   const [data, setData] = useState('');
 
@@ -17,6 +19,9 @@ const AdviceCard = () => {
     <div className='advice-card-cnt'>
       <p className='advice-header'>ADVICE #{data.id}</p>
       <p className='advice-para'>"{data.advice}" </p>
+      <button className='advice-btn'>
+        <BsFillDice5Fill />
+      </button>
     </div>
   );
 };
