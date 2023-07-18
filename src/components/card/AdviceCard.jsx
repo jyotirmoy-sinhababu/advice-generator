@@ -7,19 +7,23 @@ import { BsFillDice5Fill } from 'react-icons/bs';
 
 const AdviceCard = () => {
   const [data, setData] = useState('');
+  const [count, setCount] = useState(0);
 
   useEffect(() => {
     axios.get('https://api.adviceslip.com/advice').then((res) => {
-      console.log(res.data.slip);
       setData(res.data.slip);
     });
-  }, []);
+  }, [count]);
+
+  const countControl = () => {
+    setCount(count + 1);
+  };
 
   return (
     <div className='advice-card-cnt'>
       <p className='advice-header'>ADVICE #{data.id}</p>
       <p className='advice-para'>"{data.advice}" </p>
-      <button className='advice-btn'>
+      <button onClick={countControl} className='advice-btn'>
         <BsFillDice5Fill />
       </button>
     </div>
